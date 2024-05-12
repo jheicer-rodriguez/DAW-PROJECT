@@ -1,4 +1,4 @@
-package pe.edu.cibertec.DAWPROJECT.security;
+package pe.edu.cibertec.demo.security;
 
 import io.jsonwebtoken.*;
 import jakarta.servlet.FilterChain;
@@ -15,8 +15,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import static pe.edu.cibertec.DAWPROJECT.security.Constants.*;
-
+import static pe.edu.cibertec.demo.security.Constants.*;
 
 @Component
 public class JWTAuthorizationFilter extends OncePerRequestFilter {

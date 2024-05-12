@@ -1,4 +1,4 @@
-package pe.edu.cibertec.DAWPROJECT.security;
+package pe.edu.cibertec.demo.security;
 
 import io.jsonwebtoken.security.Keys;
 
@@ -14,7 +14,7 @@ public class Constants {
 
     // JWT
     public static final String SUPER_SECRET_KEY = "ZnJhc2VzbGFyZ2FzcGFyYWNvbG9jYXJjb21vY2xhdmVlbnVucHJvamVjdG9kZWVtZXBsb3BhcmFqd3Rjb25zcHJpbmdzZWN1cml0eQ==bWlwcnVlYmFkZWVqbXBsb3BhcmFiYXNlNjQ=";
-    public static final long TOKEN_EXPIRATION_TIME = 180_000; // 3 minutes (3*600*3000)
+    public static final long TOKEN_EXPIRATION_TIME = 180_000; // 3 minutes
 
     public static Key getSigningKey(String secret) {
         byte[] keyBytes = secret.getBytes(StandardCharsets.UTF_8);
